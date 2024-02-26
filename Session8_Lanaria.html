@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Session 8 - Lanaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+
+  <style>
+    body {
+        background-image: url(https://media.discordapp.net/attachments/1094863170079825990/1210557611947069460/Background_1.png?ex=65eafea1&is=65d889a1&hm=22f798d515972098c410997c555382f0420d4e030724c38b6602b05d18ef4f44&=&format=webp&quality=lossless&width=1246&height=701);
+        background-size: cover;
+        background-position: center;
+    }
+
+    footer {
+    text-align: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    }
+  </style>
+
+  <body class="bg-dark-subtle">
+    <nav class="navbar navbar-expand-lg py-2" style="background-color: #FFEcd8;">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold font-monospace" href="#">
+            <img src="https://static-00.iconduck.com/assets.00/steaming-bowl-emoji-1991x2048-fh5yxqmj.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Japanese Cuisines 
+          </a>
+        </div>
+      </nav>
+
+      <section class="bg-black p-5" style="overflow: hidden;">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-5">
+                    <header>
+                        <h1 style="color:#FFFFFF;" class="display-4">Japanese Cuisines</h1>
+                        <p style="color:#FFFFFF;" class="lead py-3">
+                            Delving into the Culinary Treasures: A Journey Through the Diverse and Exquisite World of Japanese Cuisine
+                        </p>
+                        <button type="button" class="btn btn-info btn-lg">Explore Now</button>
+                    </header>
+                </div>
+                <div class="col-md-6 py-2" style="height: 400px; overflow: hidden;">
+                    <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="https://images.alphacoders.com/693/693688.jpg" class="img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://wallpaperbat.com/img/262525-sushi-wallpaper-top-free-sushi-background.jpg" class="img-fluid w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://wallpapers.com/images/hd/tempura-and-ketchup-zzer5g15x0bmis6o.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://c4.wallpaperflare.com/wallpaper/659/793/179/noodles-mushrooms-tasty-delicious-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://wallpapers.com/images/hd/meat-and-vegetables-for-shabu-shabu-stew-w38edbdrqa5ypbhx.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://media.istockphoto.com/id/1272098749/photo/fried-chicken.jpg?s=612x612&w=0&k=20&c=B711sVBRM-gsH18ykXHZIwX2RVjvYpdFDSsnR1rwGsc=" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class = "p-5">
+          <div class="display-2 pb-2 mb-4 text-black border-bottom border-black">
+            Cuisine List:
+          </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class = "row text-center g-4">
+
+                <div class = "col-md">
+                    <div class="card m-5" style="height: 600px; overflow: hidden;">
+                        <img src="https://web-japan.org/kidsweb/img/local_tonkotsu-ramen_pic01.jpg" class="img-fluid">
+                        <div class="card-body">
+                          <h2 class="card-title font-monospace fw-semibold">Ramen</h2>
+                          <p class="card-text">Ramen, a Japanese noodle soup renowned for its rich broth and customizable toppings, is a beloved comfort food cherished both locally and globally.</p>
+                          <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ramenInfo">
+                            Learn More
+                          </button>
+                        </div>
+
+                        <div class="modal fade" id="ramenInfo" tabindex="-1" aria-labelledby="ramenInfoLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="ramenInfoLabel">Ramen</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src ="https://i0.wp.com/www.angsarap.net/wp-content/uploads/2022/03/Tonkotsu-Ramen-Wide.jpg?fit=1080%2C720&ssl=1" class="img-fluid">
+                                        <p class = "fst-italic p-1 fw-semibold font-monospace">Tonkotsu Ramen</p>
+                                        <p class = "p-5 lh-base">Ramen, Japan's iconic noodle soup, offers a rich culinary journey through its diverse varieties. Shoyu Ramen features a clear broth flavored with soy sauce, while Shio Ramen offers a lighter alternative seasoned with salt. Miso Ramen boasts a hearty broth made from fermented soybean paste, while Tonkotsu Ramen indulges with its creamy, pork bone-based broth. Tsukemen, or dipping ramen, presents a unique twist with cold noodles served alongside concentrated broth for dipping. Each type of ramen showcases a symphony of flavors, from tender slices of chashu pork to tangy bamboo shoots and fragrant green onions. Beyond its traditional renditions, ramen reflects regional nuances and culinary innovation across Japan, from bustling city streets to serene coastal towns. Whether enjoyed in a local ramen shop or recreated in kitchens worldwide, ramen continues to captivate with its comforting warmth and endless variety, inviting diners on a flavorful journey through Japan's culinary landscape.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md">
+                    <div class="card m-5" style="height: 600px; overflow: hidden;">
+                        <img src="https://w0.peakpx.com/wallpaper/908/450/HD-wallpaper-sushi-philadelphia-rolls-japanese-food.jpg" class="img-fluid">
+                        <div class="card-body">
+                          <h2 class="card-title font-monospace fw-semibold">Sushi</h2>
+                          <p class="card-text">Sushi's elegant simplicity and fresh ingredients make it a culinary experience that transcends cultural boundaries and delights diners of all backgrounds.</p>
+                          <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#sushiInfo">
+                            Learn More
+                          </button>
+                        </div>
+
+                        <div class="modal fade" id="sushiInfo" tabindex="-1" aria-labelledby="sushiInfoLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="sushiInfoLabel">Sushi</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src ="https://c4.wallpaperflare.com/wallpaper/700/944/907/rolls-sushi-sushi-rolls-wallpaper-preview.jpg" class="img-fluid">
+                                        <p class = "fst-italic p-1 fw-semibold font-monospace">Sashimi</p>
+                                        <p class = "p-5 lh-base">Sushi, originating from Japan, has transcended cultural boundaries to become a globally adored culinary sensation. This delectable dish typically consists of vinegared rice combined with a variety of fresh ingredients, such as raw or cooked seafood, vegetables, and seaweed. The artistry of sushi lies not only in its exquisite taste but also in its meticulous preparation and presentation. Whether enjoyed as delicate rolls, nigiri, or sashimi, each bite offers a symphony of flavors and textures that tantalize the palate. Sushi embodies a perfect balance of simplicity and sophistication, inviting diners on a sensory journey that celebrates the beauty of Japanese cuisine.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class = "row text-center g-4">
+
+                <div class = "col-md">
+                    <div class="card m-5" style="height: 600px; overflow: hidden;">
+                        <img src="https://static.vecteezy.com/system/resources/previews/026/564/076/non_2x/udon-japanesegraphy-foodgraphy-ai-generated-free-photo.jpg" class="img-fluid">
+                        <div class="card-body">
+                          <h2 class="card-title font-monospace fw-semibold">Udon</h2>
+                          <p class="card-text">Udon, a staple of Japanese cuisine, is renowned for its chewy noodles and savory broth, offering a comforting and satisfying dining experience.</p>
+                          <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#udonInfo">
+                            Learn More
+                          </button>
+                        </div>
+
+                        <div class="modal fade" id="udonInfo" tabindex="-1" aria-labelledby="ramenInfoLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="udonInfoLabel">Udon</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src ="data:image/jpeg;base64,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" class="img-fluid">
+                                        <p class = "fst-italic p-1 fw-semibold font-monospace">Ankake Udon</p>
+                                        <p class = "p-5 lh-base">Udon, a quintessential dish in Japanese cuisine, is cherished for its simplicity and hearty flavors. Featuring thick, chewy wheat noodles bathed in a flavorful broth made from ingredients like dashi, soy sauce, and mirin, udon offers a comforting and satisfying meal experience. Often accompanied by a variety of toppings such as sliced green onions, tempura, and kamaboko (fish cake), each bowl of udon is a harmonious blend of textures and tastes. Whether enjoyed hot in the winter or cold in the summer, udon holds a special place in the hearts and stomachs of food enthusiasts worldwide, embodying the essence of Japanese culinary tradition.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md">
+                    <div class="card m-5" style="height: 600px; overflow: hidden;">
+                        <img src="https://simplyhomecooked.com/wp-content/uploads/2019/12/shrimp-tempura-recipe-8.jpg" class="img-fluid">
+                        <div class="card-body">
+                          <h2 class="card-title font-monospace fw-semibold">Tempura</h2>
+                          <p class="card-text">Tempura, a beloved Japanese culinary tradition, features light, crispy batter-coated ingredients fried to golden perfection.</p>
+                          <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#tempuraInfo">
+                            Learn More
+                          </button>
+                        </div>
+
+                        <div class="modal fade" id="tempuraInfo" tabindex="-1" aria-labelledby="tempuraInfoLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="tempuraInfoLabel">Tempura</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src ="https://thestarvingchefblog.com/wp-content/uploads/2022/03/calamari-recipe.png" class="img-fluid">
+                                        <p class = "fst-italic p-1 fw-semibold font-monospace">Squid Tempura</p>
+                                        <p class = "p-5 lh-base">Tempura, a cherished component of Japanese cuisine, is renowned for its delicate, crispy texture and flavorful profile. Originating in the 16th century, tempura involves dipping seafood, vegetables, or even tofu in a light batter made from flour, water, and sometimes egg, before frying them to a golden crispness. The result is a delightful contrast of textures—crunchy on the outside, tender on the inside. Often served with a dipping sauce or enjoyed alongside rice and miso soup, tempura embodies the art of simplicity and precision in Japanese culinary tradition. Its popularity extends far beyond Japan's borders, captivating the taste buds of food lovers worldwide with its irresistible combination of flavors and textures.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Made by Kreian Lanaria | BIT32
+    </footer>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
